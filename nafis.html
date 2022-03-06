@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+  <!-- aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- akhir aos -->
+  <!-- my CSS -->
+  <link rel="stylesheet" href="style.CSS" />
+  <!-- akhir my CSS -->
+  <title>Zulfian Nafis</title>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm" style="background-color: #181616">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Zulfian Nafis</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#About">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- akhir navbar -->
+  <!--layout-->
+  <div data-aos="fade-up" data-aos-duration="3000" data-aos-delay="600">
+    <section class="nyobaaa" id="Home">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6" style="margin-top: 5%;">
+            <p style="font-size: 1vw; color: aliceblue;">Home</p>
+            <p style="font-size: 2vw; color: #187E9F;">Hi, i'm Zulfian Nafis</p>
+            <p style="font-size: 3vw; color: aliceblue;">Student of Electronic Engineering
+              Polytechnic Institute of Surabaya</p>
+            <p style="font-size: 1.5vw; color: rgb(151, 148, 148);">I’m from Indonesia and i’m colleger of Electronic
+              Engineering Polytechnic Institute of Surabaya.<br>
+              I entered at Electronic Engineering Polytechnic Institute of Surabaya on July 2021 and my major is
+              informatic engineering</p>
+          </div>
+          <div class="col-md-6"><img src="img/aku.png" alt="Zulfian Nafis" width="50%"
+              style="float: right; margin-top: 5%;"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div data-aos="fade-up-right" data-aos-duration="3000" data-aos-delay="200">
+    <section class="nyobaaa" id="About">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6" style="margin-top: 10%;">
+            <p style="font-size: 1vw; color: aliceblue;">About me</p>
+            <p style="font-size: 1.5vw; color: rgb(151, 148, 148);">Hello, my name Zulfian Nafis and i’m from
+              lamongan.<br>
+              i graduated from Senior High school 1 Lamongan in 2020.<br>
+              My hobbies are basketball, swimming and running.
+              And i like editing and learning language.
+            </p>
+          </div>
+          <div class="col-md-6"><img src="img/saya.png" alt="Zulfian Nafis" width="50%"
+              style="float: right; margin-top: 18%;"></div>
+        </div>
+        <div class="row" style="text-align: center; color: #187E9F;">
+          <div class="col">
+            <h2>skills and tools</h2>
+            <div class="row">
+              <div class="col" style="align-items: center; margin-top: 5%;">
+                <img src="img/photo.png" alt="adobe" style="width: 10%;"> <img src="img/ilustrat.png" alt="ilustrator"
+                  style="width: 10%; margin-left: 2%;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <main id="Contact" data-aos="flip-left">
+    <p style="font-size: 1vw;">Contact</p>
+    <a href="http://www.instagram.com/zulfian_nafis" target="_blank"> <img src="img/dan.png" alt="instagram"
+        width="3%"></a>
+    <a href="https://www.youtube.com/channel/UCOhuDqGE_vknHtU8HlFBziQ" target="_blank"><img src="img/Background.png"
+        alt="youtube" width="3%" style="margin-left: 2%;"></a>
+    <p style="font-size: 2vw; color: #a0a0a0;"> Thank you for visitting</p>
+  </main>
+  <h2 style="color: rgb(142, 175, 204); text-align: center;">Kritik dan Saran</h2>
+  <form style="color: aliceblue;">
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email">
+    <input type="submit" value="Submit">
+  </form>
+  <br>
+  <!--akhir-->
+  <!-- javasript aos and gsap-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js">
+  </script>
+  <script>
+    gsap.from('.navbar', {
+      duration: 1.5,
+      y: -100,
+      opacity: 0,
+      ease: 'bounce'
+    })
+  </script>
+  <!--javasript aos gsap-->
+</body>
+
+</html>
